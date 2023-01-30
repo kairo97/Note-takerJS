@@ -3,8 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 
 router.get("/", (req, res) => {
-    fs.readFile("./db.json", "utf-8",
-    (err, data) => {
+    fs.readFile("./db.json", "utf-8",(err, data) => {
         if (err) {
             res.status(500).send("oh no!");
             throw err;
@@ -15,8 +14,7 @@ router.get("/", (req, res) => {
     });
 });
 router.post("/", (req, res) => {
-    fs.readFile("./db.json", "utf-8",
-    (err, data) => {
+    fs.readFile("./db.json", "utf-8", (err, data) => {
         if (err) {
             res.status(500).send("oh no!");
             throw err;
@@ -35,8 +33,7 @@ router.post("/", (req, res) => {
     });
 });
 router.get("/:title", (req, res) => {
-    fs.readFile("./db.json", "utf-8", 
-    (err, data) => {
+    fs.readFile("./db.json", "utf-8", (err, data) => {
         if (err) {
             res.status(500).send("oh no!");
             throw err;
@@ -53,8 +50,7 @@ router.get("/:title", (req, res) => {
     });
 });
 router.put("/:title", (req, res) => {
-    fs.readFile("./db.json", "utf-8", 
-    (err, data) => {
+    fs.readFile("./db.json", "utf-8", (err, data) => {
         if (err) {
             res.status(500).send("oh no!");
             throw err;
@@ -83,8 +79,7 @@ router.put("/:title", (req, res) => {
 });
 
 router.delete("./title", (req, res) => {
-    fs.readFile("./db.json", "utf-8", 
-    (err, data) => {
+    fs.readFile("./db.json", "utf-8", (err, data) => {
         if (err) {
         res.status(500).send("oh no!");
         throw err;
