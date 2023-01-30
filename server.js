@@ -1,16 +1,21 @@
 const express = require("express");
-const app = express();
 const path = require("path");
 const fs = require("fs");
+const apiControllers = require("./controllers");
+
+
 const PORT = process.env.PORT || 3000;
+const app = express();
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
-const noteRoutes = require("../../controllers/taskController")
-app.use("../db", noteRoutes)
+
+app.use("/api", apiControllers)
+// app.use("/db", noteRoutes)
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../../public/index.html"));

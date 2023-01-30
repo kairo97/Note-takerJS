@@ -1,11 +1,11 @@
-const express = require("express");
-const router = express.Router();
-const path =require("path");
-const fs = require('fs');
+const express = require('express');
+const router = require ("./taskController");
+const app = express.router();
+const path = require('path');
 
-// /api/notes
+
 router.get("/", (req, res) => {
-    fs.readFile("./db/db.json", "utf-8",(err, data) => {
+    fs.readFile("../../db.json", "utf-8",(err, data) => {
         if (err) {
             res.status(500).send("oh no!");
             throw err;
@@ -34,7 +34,6 @@ router.post("/", (req, res) => {
         }
     });
 });
-// /api/notes/takeouttrash
 router.get("/:title", (req, res) => {
     fs.readFile("./db.json", "utf-8", (err, data) => {
         if (err) {
@@ -108,4 +107,3 @@ router.delete("./title", (req, res) => {
 });
 
 module.exports = router;
-
