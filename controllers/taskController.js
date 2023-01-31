@@ -35,7 +35,7 @@ router.post("/", (req, res) => {
     });
 });
 // /api/notes/takeouttrash
-router.get("/:title", (req, res) => {
+router.get("/:id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
             res.status(500).send("oh no!");
@@ -52,7 +52,7 @@ router.get("/:title", (req, res) => {
         }
     });
 });
-router.put("/:title", (req, res) => {
+router.put("/:id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
             res.status(500).send("oh no!");
@@ -81,7 +81,7 @@ router.put("/:title", (req, res) => {
     });
 });
 
-router.delete("./title", (req, res) => {
+router.delete("./id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
         res.status(500).send("oh no!");
@@ -89,7 +89,7 @@ router.delete("./title", (req, res) => {
         } else {
             let notesData = JSON.parse(data);
             notesData = notesData.filter((note) => {
-                if (note.title == req.params.title) {
+                if (note.id == req.params.id) {
                     return false;
                 } else {
                     return true;
