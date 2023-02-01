@@ -28,4 +28,5 @@
         node.js, express.js, path,  and lots of vanilla javascript
 
 ## Screenshot        
-   ![image](https://user-images.githubusercontent.com/109006341/215914647-15ad4bde-a9c2-437a-beee-3ffd2642797e.png)
+![Note Taker - Google Chrome 1_31_2023 4_27_06 PM](https://user-images.githubusercontent.com/109006341/215915058-ea799f3a-184b-4c3c-95ea-606f336d5fde.png)
+
