@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const path =require("path");
 const fs = require('fs');
 
-// /api/notes
+// api//notes
+
 router.get("/", (req, res) => {
     fs.readFile("./db/db.json", "utf-8",(err, data) => {
         if (err) {
@@ -81,7 +81,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
-router.delete("./id", (req, res) => {
+router.delete("./:id", (req, res) => {
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         if (err) {
         res.status(500).send("oh no!");
