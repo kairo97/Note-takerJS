@@ -28,4 +28,4 @@
         node.js, express.js, path,  and lots of vanilla javascript
 
 ## Screenshot        
-      <img width="1271" alt="notetakerJS screenshot" src="https://user-images.githubusercontent.com/109006341/215914182-cdb0bb44-53a8-4614-a0a4-d14fc5481fa3.png">
+    <img width="1271" alt="Screenshot_20230131_041127" src="https://user-images.githubusercontent.com/109006341/215914389-c9b63c5b-e4e2-4783-b91c-7635b3431aa8.png">
