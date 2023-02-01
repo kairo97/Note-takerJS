@@ -16,8 +16,8 @@
 ## Usage
         enter the site, click start, enter the title of your note in the title section, then enter the contents of your note in the text section
 ## Screenshot
-         <img width="1271" alt="notetakerJS screenshot" src="https://user-images.githubusercontent.com/109006341/215913226-e20fd907-6ab9-4951-9e8f-aa45452371bb.png">
-## Credits
+       <img width="1271" alt="notetakerJS screenshot" src="https://user-images.githubusercontent.com/109006341/215913376-595688ad-7e37-4e6e-bc8f-8c9cb78da205.png">
+
         UW fullstack bootcamp,and everyone in it.
         
 ## License
