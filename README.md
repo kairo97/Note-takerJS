@@ -15,8 +15,7 @@
         
 ## Usage
         enter the site, click start, enter the title of your note in the title section, then enter the contents of your note in the text section
-## Screenshot
-       <img width="1271" alt="notetakerJS screenshot" src="https://user-images.githubusercontent.com/109006341/215913376-595688ad-7e37-4e6e-bc8f-8c9cb78da205.png">
+       
 ## Credits
         UW fullstack bootcamp,and everyone in it.
         
@@ -28,5 +27,6 @@
 ## Features
         node.js, express.js, path,  and lots of vanilla javascript
 
+## Screenshot        
         
-        
+<img width="955" alt="Screenshot_20230131_092215" src="https://user-images.githubusercontent.com/109006341/215913826-c93aed22-ce96-4db5-8401-e5abef35c834.png">
