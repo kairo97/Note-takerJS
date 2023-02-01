@@ -28,5 +28,6 @@
         node.js, express.js, path,  and lots of vanilla javascript
 
 ## Screenshot        
-        
-<img width="955" alt="Screenshot_20230131_092215" src="https://user-images.githubusercontent.com/109006341/215913826-c93aed22-ce96-4db5-8401-e5abef35c834.png">
+        <img width="955" alt="Screenshot_20230131_092215" src="https://user-images.githubusercontent.com/109006341/215913980-3382b21d-b182-4b47-bce1-801c3345e01b.png">
+
+
